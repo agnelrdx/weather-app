@@ -43,7 +43,7 @@ const RegisterModal = ({ isOpen, onClose }: RegisterModalProps) => {
       })
     }
 
-    const existingUser = isExistingUser(registeredUsers, username.current?.value)
+    const existingUser = isExistingUser(registeredUsers.users, username.current?.value)
     if (existingUser) {
       return toast({
         title: 'User already exists.',

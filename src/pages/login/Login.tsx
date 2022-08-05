@@ -37,7 +37,7 @@ const Login = () => {
       })
     }
 
-    const existingUser = isUserExists(registeredUsers, username.current?.value)
+    const existingUser = isUserExists(registeredUsers.users, username.current?.value)
     if (!existingUser) {
       return toast({
         title: 'User does not exist.',

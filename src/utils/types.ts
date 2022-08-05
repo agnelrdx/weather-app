@@ -22,6 +22,10 @@ export interface WeatherState {
   main: Object
 }
 
+export interface RegisteredUsers {
+  users: UserState[]
+}
+
 export type RootState = ReturnType<typeof store.getState>
 
 export type AppDispatch = typeof store.dispatch

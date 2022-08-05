@@ -4,6 +4,7 @@ import { ColorModeScript } from '@chakra-ui/react'
 import { Provider } from 'react-redux'
 import { store, persistor } from 'utils/store'
 import { PersistGate } from 'redux-persist/integration/react'
+import { ChakraProvider, theme } from '@chakra-ui/react'
 import { App } from 'App'
 import reportWebVitals from 'reportWebVitals'
 import * as serviceWorker from 'serviceWorker'
@@ -19,7 +20,9 @@ root.render(
     <ColorModeScript />
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <App />
+        <ChakraProvider theme={theme}>
+          <App />
+        </ChakraProvider>
       </PersistGate>
     </Provider>
   </React.StrictMode>
