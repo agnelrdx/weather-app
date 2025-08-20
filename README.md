@@ -1,4 +1,4 @@
-### Weather APP
+## Weather APP
 
 <img src="https://i.ibb.co/ypp2Svf/Screen-Shot-2022-08-04-at-4-12-50-PM.png" alt="filter">
 
